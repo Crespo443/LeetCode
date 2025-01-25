@@ -7,7 +7,7 @@ const validParentheses = (s) => {
     }
 
     for (const char of s){
-        if (Object.values(parentheses).includes(char)){
+        if (char in parentheses){
             stack.push(char)
         } else {
             if (char !== parentheses[stack[0]]){
