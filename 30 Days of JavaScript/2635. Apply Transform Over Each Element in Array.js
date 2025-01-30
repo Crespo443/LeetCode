@@ -5,3 +5,7 @@ var map = (arr, fn) => {
     }
     return result
 }
+
+var map = (arr, fn) => {
+    return arr.map(fn)
+}
